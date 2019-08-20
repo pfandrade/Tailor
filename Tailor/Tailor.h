@@ -2,7 +2,7 @@
 //  Tailor.h
 //  Tailor
 //
-//  Created by Developer on 16/08/2019.
+//  Created on 16/08/2019.
 //  Copyright © 2019 Paulo Andrade. All rights reserved.
 //
 

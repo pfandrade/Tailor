@@ -10,6 +10,12 @@
 		D75AA95A2306FC7F00E5A6D6 /* Tailor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D75AA9502306FC7E00E5A6D6 /* Tailor.framework */; };
 		D75AA95F2306FC7F00E5A6D6 /* TailorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75AA95E2306FC7F00E5A6D6 /* TailorTests.swift */; };
 		D75AA9612306FC7F00E5A6D6 /* Tailor.h in Headers */ = {isa = PBXBuildFile; fileRef = D75AA9532306FC7E00E5A6D6 /* Tailor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D75AA96B2306FCE100E5A6D6 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75AA96A2306FCE100E5A6D6 /* Theme.swift */; };
+		D75AA96D2306FD1D00E5A6D6 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75AA96C2306FD1D00E5A6D6 /* Style.swift */; };
+		D75AA97A23070B6900E5A6D6 /* Stylable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75AA97923070B6900E5A6D6 /* Stylable.swift */; };
+		D75AA97C23070C5400E5A6D6 /* ObservableTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75AA97B23070C5400E5A6D6 /* ObservableTheme.swift */; };
+		D75AA983230877CD00E5A6D6 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75AA982230877CD00E5A6D6 /* TestModel.swift */; };
+		D75AA9862308780C00E5A6D6 /* ObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D75AA9852308780C00E5A6D6 /* ObjCTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,14 @@
 		D75AA9592306FC7F00E5A6D6 /* TailorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TailorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D75AA95E2306FC7F00E5A6D6 /* TailorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TailorTests.swift; sourceTree = "<group>"; };
 		D75AA9602306FC7F00E5A6D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D75AA96A2306FCE100E5A6D6 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D75AA96C2306FD1D00E5A6D6 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		D75AA97923070B6900E5A6D6 /* Stylable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stylable.swift; sourceTree = "<group>"; };
+		D75AA97B23070C5400E5A6D6 /* ObservableTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableTheme.swift; sourceTree = "<group>"; };
+		D75AA97E230868FF00E5A6D6 /* project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project.xcconfig; sourceTree = "<group>"; };
+		D75AA982230877CD00E5A6D6 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
+		D75AA9842308780C00E5A6D6 /* TailorTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TailorTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		D75AA9852308780C00E5A6D6 /* ObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +85,13 @@
 		D75AA9522306FC7E00E5A6D6 /* Tailor */ = {
 			isa = PBXGroup;
 			children = (
+				D75AA97D2307148A00E5A6D6 /* Config */,
 				D75AA9532306FC7E00E5A6D6 /* Tailor.h */,
 				D75AA9542306FC7E00E5A6D6 /* Info.plist */,
+				D75AA96A2306FCE100E5A6D6 /* Theme.swift */,
+				D75AA96C2306FD1D00E5A6D6 /* Style.swift */,
+				D75AA97923070B6900E5A6D6 /* Stylable.swift */,
+				D75AA97B23070C5400E5A6D6 /* ObservableTheme.swift */,
 			);
 			path = Tailor;
 			sourceTree = "<group>";
@@ -80,10 +99,21 @@
 		D75AA95D2306FC7F00E5A6D6 /* TailorTests */ = {
 			isa = PBXGroup;
 			children = (
+				D75AA982230877CD00E5A6D6 /* TestModel.swift */,
 				D75AA95E2306FC7F00E5A6D6 /* TailorTests.swift */,
 				D75AA9602306FC7F00E5A6D6 /* Info.plist */,
+				D75AA9852308780C00E5A6D6 /* ObjCTests.m */,
+				D75AA9842308780C00E5A6D6 /* TailorTests-Bridging-Header.h */,
 			);
 			path = TailorTests;
+			sourceTree = "<group>";
+		};
+		D75AA97D2307148A00E5A6D6 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D75AA97E230868FF00E5A6D6 /* project.xcconfig */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,9 +178,11 @@
 				TargetAttributes = {
 					D75AA94F2306FC7E00E5A6D6 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					D75AA9582306FC7E00E5A6D6 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -195,6 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D75AA97A23070B6900E5A6D6 /* Stylable.swift in Sources */,
+				D75AA97C23070C5400E5A6D6 /* ObservableTheme.swift in Sources */,
+				D75AA96B2306FCE100E5A6D6 /* Theme.swift in Sources */,
+				D75AA96D2306FD1D00E5A6D6 /* Style.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +238,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D75AA983230877CD00E5A6D6 /* TestModel.swift in Sources */,
 				D75AA95F2306FC7F00E5A6D6 /* TailorTests.swift in Sources */,
+				D75AA9862308780C00E5A6D6 /* ObjCTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +257,7 @@
 /* Begin XCBuildConfiguration section */
 		D75AA9622306FC7F00E5A6D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D75AA97E230868FF00E5A6D6 /* project.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -268,7 +307,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -282,6 +320,7 @@
 		};
 		D75AA9632306FC7F00E5A6D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D75AA97E230868FF00E5A6D6 /* project.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -325,7 +364,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -340,6 +378,8 @@
 		D75AA9652306FC7F00E5A6D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -355,6 +395,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.pfandrade.Tailor;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +404,8 @@
 		D75AA9662306FC7F00E5A6D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -386,6 +429,8 @@
 		D75AA9682306FC7F00E5A6D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TailorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -395,6 +440,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.pfandrade.TailorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TailorTests/TailorTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -403,6 +450,8 @@
 		D75AA9692306FC7F00E5A6D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TailorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -412,6 +461,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.pfandrade.TailorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TailorTests/TailorTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

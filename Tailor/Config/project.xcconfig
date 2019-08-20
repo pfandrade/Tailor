@@ -1,0 +1,17 @@
+//
+//  project.xcconfig
+//  Tailor
+//  
+//  Created on 17/08/2019.
+//  Copyright © 2019 Paulo Andrade. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+SUPPORTED_PLATFORMS = macosx iphoneos iphonesimulator watchos watchsimulator appletvos appletvsimulator
+
+IPHONEOS_DEPLOYMENT_TARGET = 9.0
+MACOSX_DEPLOYMENT_TARGET = 10.10
+TVOS_DEPLOYMENT_TARGET = 9.0
+WATCHOS_DEPLOYMENT_TARGET = 4.0
